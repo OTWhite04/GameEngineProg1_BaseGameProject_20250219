@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public LevelManager levelManager;
+    public GameStateManager gameStateManager;
+    public UIManager uIManager;
     public GameObject player;
 
     private void Awake()
