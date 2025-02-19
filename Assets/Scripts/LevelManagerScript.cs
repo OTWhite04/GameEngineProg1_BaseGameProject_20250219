@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManagerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private string spawnPointName;
+
+    public void LoadSceneWithSpawnPoint(string sceneName, string spawnPoint)
     {
-        
+        spawnPointName = spawnPoint;
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
+        SceneManager.LoadScene(sceneName);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        
+        SetPlayerToSpawn(spawnPointName);
+
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    public void SetPlayerToSpawn(string spawnPointName)
+    {
+        GameObject spawnPointObject = GameObject.Find(spawnPointName);
+
+        if (spawnPointObject != null)
+        {
+            Transform spawnPointTransform = spawnPointObject.transform;
+            GameManager.Instance.player.transform.position = spawnPointTransform.position;
+        }
+        else
+        {
+            Debug.Log($"Error, {spawnPointName} not found in scene!");
+        }
     }
 }
