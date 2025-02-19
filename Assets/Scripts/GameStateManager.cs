@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameStateManagerScript : MonoBehaviour
+public class GameStateManager : MonoBehaviour
 {
     //Reference ot the game manager.
-    public GameManagerScript gameManager;
+    public GameManager gameManager;
 
     public enum GameState
     {
@@ -87,7 +87,7 @@ public class GameStateManagerScript : MonoBehaviour
                 {
                     Debug.Log("Main Menu State");
                     Time.timeScale = 0.0f;
-                    //gameManager.uIManager.MainMenuUI();
+                    gameManager.uIManager.MainMenuUI();
                     break;
                 }
             case GameState.Gameplay_State:

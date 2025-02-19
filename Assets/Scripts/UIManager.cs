@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UIManagerScript : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
     //int for the score and reference for the TextMeshPro.
     public int score;
