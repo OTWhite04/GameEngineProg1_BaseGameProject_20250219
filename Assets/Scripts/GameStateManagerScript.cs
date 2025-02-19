@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameStateManagerScript : MonoBehaviour
 {
     //Reference ot the game manager.
-    public GameManager gameManager;
+    public GameManagerScript gameManager;
 
     public enum GameState
     {
@@ -87,21 +87,21 @@ public class GameStateManagerScript : MonoBehaviour
                 {
                     Debug.Log("Main Menu State");
                     Time.timeScale = 0.0f;
-                    gameManager.uIManager.MainMenuUI();
+                    //gameManager.uIManager.MainMenuUI();
                     break;
                 }
             case GameState.Gameplay_State:
                 {
                     Debug.Log("In Gameplay State");
                     Time.timeScale = 1.0f;
-                    gameManager.uIManager.GameplayUI();
+                    //gameManager.uIManager.GameplayUI();
                     break;
                 }
             case GameState.Pause_State:
                 {
                     Debug.Log("In Paused State");
                     Time.timeScale = 0.0f;
-                    gameManager.uIManager.PausedUI();
+                    //gameManager.uIManager.PausedUI();
                     break;
                 }
 

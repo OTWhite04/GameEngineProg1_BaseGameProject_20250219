@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static GameManager Instance { get; private set; }
 
-    // Update is called once per frame
-    void Update()
+    public LevelManager levelManager;
+    public GameObject player;
+
+    private void Awake()
     {
-        
+        #region Singleton Pattern
+
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        #endregion
+
     }
 }
