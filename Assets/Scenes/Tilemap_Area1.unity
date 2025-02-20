@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0b593f8cfc2f94a9d2457b34cfc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  sceneToLoad: Tilemap_Area2
   spawnPoint: 
 --- !u!114 &136247766
 MonoBehaviour:
@@ -5264,7 +5264,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.05
+      value: 6.7
       objectReference: {fileID: 0}
     - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
       propertyPath: m_LocalPosition.y
