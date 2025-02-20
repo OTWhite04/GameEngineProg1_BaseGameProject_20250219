@@ -977,6 +977,63 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &746040024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3821583392875345424, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285357752629769349, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
+      propertyPath: m_Name
+      value: SpawnPoint_S2_East
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
 --- !u!1 &864246896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,7 +3007,7 @@ GameObject:
   - component: {fileID: 954121900}
   - component: {fileID: 954121899}
   m_Layer: 0
-  m_Name: TriggerSceneChange
+  m_Name: TriggerSceneChange_S2_East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2985,7 +3042,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3013,8 +3070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0b593f8cfc2f94a9d2457b34cfc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Tilemap_Area2
-  spawnPoint: 
+  sceneToLoad: Tilemap_Area3
+  spawnPoint: SpawnPoint_S3_West
 --- !u!114 &954121901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3185,7 +3242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8285357752629769349, guid: 76a5ec53271460c4f87242749eaf1ace, type: 3}
       propertyPath: m_Name
-      value: SpawnPoint
+      value: SpawnPoint_S2_West
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3205,7 +3262,7 @@ GameObject:
   - component: {fileID: 1997759330}
   - component: {fileID: 1997759329}
   m_Layer: 0
-  m_Name: TriggerSceneChange (1)
+  m_Name: TriggerSceneChange_S2_West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3240,7 +3297,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3268,8 +3325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0b593f8cfc2f94a9d2457b34cfc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Tilemap_Area2
-  spawnPoint: 
+  sceneToLoad: Tilemap_Area1
+  spawnPoint: Area1_SpawnPoint
 --- !u!114 &1997759331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3307,3 +3364,4 @@ SceneRoots:
   - {fileID: 954121902}
   - {fileID: 1997759332}
   - {fileID: 1382338198}
+  - {fileID: 746040024}
