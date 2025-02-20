@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
         if (spawnPointObject != null)
         {
             Transform spawnPointTransform = spawnPointObject.transform;
-            //GameManager.Instance.player.transform.position = spawnPointTransform.position;
+            GameManager.Instance.player.transform.position = spawnPointTransform.position;
         }
         else
         {

@@ -94,14 +94,14 @@ public class GameStateManager : MonoBehaviour
                 {
                     Debug.Log("In Gameplay State");
                     Time.timeScale = 1.0f;
-                    //gameManager.uIManager.GameplayUI();
+                    gameManager.uIManager.GameplayUI();
                     break;
                 }
             case GameState.Pause_State:
                 {
                     Debug.Log("In Paused State");
                     Time.timeScale = 0.0f;
-                    //gameManager.uIManager.PausedUI();
+                    gameManager.uIManager.PausedUI();
                     break;
                 }
 
