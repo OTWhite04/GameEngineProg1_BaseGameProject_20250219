@@ -110,6 +110,13 @@ public class GameStateManager : MonoBehaviour
                     gameManager.uIManager.PausedUI();
                     break;
                 }
+            case GameState.Options_State:
+                {
+                    Debug.Log("In Options State");
+                    Time.timeScale = 0.0f;
+                    gameManager.uIManager.OptionsUI();
+                    break;
+                }
 
         }
     }
