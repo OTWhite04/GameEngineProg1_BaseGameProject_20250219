@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public UIManager uIManager;
     public GameObject player;
 
+    //Awake method for the singleton pattern.
     private void Awake()
     {
         #region Singleton Pattern

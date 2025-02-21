@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     
-
+    //References for the ui objects.
     public GameObject mainMenu;
     public GameObject gamePlayUI;
     public GameObject pausedUI;
@@ -38,6 +38,7 @@ public class UIManager : MonoBehaviour
 
     }
 
+    //Sets OptionsUI to active.
     public void OptionsUI()
     {
         DisableAllUIPanels();

@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    //String for the scene name.
     private string spawnPointName;
 
+    //Method for loading scene with spawn point
     public void LoadSceneWithSpawnPoint(string sceneName, string spawnPoint)
     {
         spawnPointName = spawnPoint;
@@ -15,14 +17,14 @@ public class LevelManager : MonoBehaviour
 
         SceneManager.LoadScene(sceneName);
     }
-
+    //Method for the on scene loaded.
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SetPlayerToSpawn(spawnPointName);
 
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
-
+    //Method for setting the player to the new spawnpoint.
     public void SetPlayerToSpawn(string spawnPointName)
     {
         GameObject spawnPointObject = GameObject.Find(spawnPointName);

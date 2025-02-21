@@ -53,12 +53,12 @@ public class GameStateManager : MonoBehaviour
     {
         ChangeState(GameState.Gameplay_State);
     }
-
+    //Method for changing the state to the pause menu.
     public void ChangeStateToPause()
     {
         ChangeState(GameState.Pause_State);
     }
-
+    //ethod for changing the state to the options menu.
     public void ChangeStateToOptions()
     {
         ChangeState(GameState.Options_State);
