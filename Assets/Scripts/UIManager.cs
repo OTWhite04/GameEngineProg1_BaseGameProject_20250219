@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject gamePlayUI;
     public GameObject pausedUI;
+    public GameObject optionsUI;
 
     //Sets Main Menu to active.
     public void MainMenuUI()
@@ -34,12 +35,19 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void OptionsUI()
+    {
+        DisableAllUIPanels();
+        optionsUI.SetActive(true);
+    }
+
     //Disables all menus to start.
     public void DisableAllUIPanels()
     {
         mainMenu.SetActive(false);
         gamePlayUI.SetActive(false);
         pausedUI.SetActive(false);
+        optionsUI.SetActive(false);
     }
 
 

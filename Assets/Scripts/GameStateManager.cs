@@ -11,6 +11,7 @@ public class GameStateManager : MonoBehaviour
     {
         MainMenu_State,
         Gameplay_State,
+        Options_State,
         Pause_State
     }
 
@@ -56,6 +57,11 @@ public class GameStateManager : MonoBehaviour
     public void ChangeStateToPause()
     {
         ChangeState(GameState.Pause_State);
+    }
+
+    public void ChangeStateToOptions()
+    {
+        ChangeState(GameState.Options_State);
     }
 
     //Update method for changing game states.
