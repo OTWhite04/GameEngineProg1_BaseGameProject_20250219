@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
         Debug.Log("Enabling main menu UI");
         DisableAllUIPanels();
         mainMenu.SetActive(true);
+        Cursor.visible = true;
     }
     //Sets gameplay UI to active.
     public void GameplayUI()
@@ -25,6 +26,7 @@ public class UIManager : MonoBehaviour
         Debug.Log("Enabling gameplay UI");
         DisableAllUIPanels();
         gamePlayUI.SetActive(true);
+        Cursor.visible = false;
 
     }
     //Sets Paused UI to active.
@@ -32,6 +34,7 @@ public class UIManager : MonoBehaviour
     {
         DisableAllUIPanels();
         pausedUI.SetActive(true);
+        Cursor.visible = true;
 
     }
 
@@ -39,6 +42,7 @@ public class UIManager : MonoBehaviour
     {
         DisableAllUIPanels();
         optionsUI.SetActive(true);
+        Cursor.visible = true;
     }
 
     //Disables all menus to start.
